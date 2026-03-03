@@ -2,7 +2,7 @@ package com.medalyze;
 
 public class DatabaseConnection {
 
-    private static DatabaseConnection instance;
+    private static volatile DatabaseConnection instance;
 
     private DatabaseConnection() {
         System.out.println("Database connection established.");
@@ -10,7 +10,11 @@ public class DatabaseConnection {
 
     public static DatabaseConnection getInstance() {
         if (instance == null) {
-            instance = new DatabaseConnection();
+            synchronized (DatabaseConnection.class) {
+                if (instance == null) {
+                    instance = new DatabaseConnection();
+                }
+            }
         }
         return instance;
     }
