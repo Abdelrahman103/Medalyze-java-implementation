@@ -37,7 +37,19 @@ public class Main {
         DatabaseConnection db2 = DatabaseConnection.getInstance();
 
         System.out.println("Same DB instance? " + (db1 == db2));
+        
+        // Factory Test
+        ReportCreator creator;
 
+        creator = new MedicalReportCreator();
+        creator.generateReport();
+
+        creator = new BillingReportCreator();
+        creator.generateReport();
+
+        creator = new PrescriptionReportCreator();
+        creator.generateReport();
+        
         // Dashboard Abstract Factory Test
         DashboardFactory factory;
 
@@ -69,6 +81,6 @@ public class Main {
         prescription = factory.createPrescription();
 
         billing.processBilling();
-        prescription.handlePrescription(); 
+        prescription.handlePrescription();
     }
 }
