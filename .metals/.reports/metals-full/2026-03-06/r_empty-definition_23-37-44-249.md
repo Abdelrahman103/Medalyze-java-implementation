@@ -1,14 +1,18 @@
+error id: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java:_empty_/BillingFactory#createBillingRecord#
+file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+empty definition using pc, found symbol in pc: _empty_/BillingFactory#createBillingRecord#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 3296
+uri: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+text:
+```scala
 package com.medalyze;
 
-import com.medalyze.billing.BillingFactory;
-import com.medalyze.billing.InsuranceBillingFactory;
-import com.medalyze.billing.SelfPayBillingFactory;
-import com.medalyze.reports.BillingReportCreator;
-import com.medalyze.reports.MedicalReportCreator;
-import com.medalyze.reports.PrescriptionReportCreator;
-import com.medalyze.reports.ReportCreator;
-import com.medalyze.billing.BillingRecord;
-import com.medalyze.billing.Prescription;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 /**
  * Main class to test core creational design patterns:
@@ -90,7 +94,7 @@ public class Main {
         System.out.println("** Billing Abstract Factory Test: Self-Pay Billing **");
         BillingFactory selfPayFactory = new SelfPayBillingFactory();
 
-        BillingRecord selfPayBilling = selfPayFactory.createBillingRecord();
+        BillingRecord selfPayBilling = selfPayFactory.createBillingRecor@@d();
         Prescription selfPayPrescription = selfPayFactory.createPrescription();
 
         selfPayBilling.processBilling();
@@ -100,3 +104,9 @@ public class Main {
         System.out.println("=== Medalyze System Test Completed Successfully ===");
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/BillingFactory#createBillingRecord#

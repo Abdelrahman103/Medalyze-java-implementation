@@ -1,4 +1,18 @@
+error id: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java:com/medalyze/billing/InsurancePrescription#
+file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+empty definition using pc, found symbol in pc: com/medalyze/billing/InsurancePrescription#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 509
+uri: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+text:
+```scala
 package com.medalyze;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 import com.medalyze.billing.BillingFactory;
 import com.medalyze.billing.InsuranceBillingFactory;
@@ -8,7 +22,7 @@ import com.medalyze.reports.MedicalReportCreator;
 import com.medalyze.reports.PrescriptionReportCreator;
 import com.medalyze.reports.ReportCreator;
 import com.medalyze.billing.BillingRecord;
-import com.medalyze.billing.Prescription;
+import com.medalyze.billing.InsurancePre@@scription;
 
 /**
  * Main class to test core creational design patterns:
@@ -100,3 +114,9 @@ public class Main {
         System.out.println("=== Medalyze System Test Completed Successfully ===");
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: com/medalyze/billing/InsurancePrescription#

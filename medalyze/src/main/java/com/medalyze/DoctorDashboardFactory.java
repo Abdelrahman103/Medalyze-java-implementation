@@ -1,5 +1,7 @@
 package com.medalyze;
 
+import com.medalyze.reports.DoctorReport;
+
 public class DoctorDashboardFactory implements DashboardFactory {
 
     @Override

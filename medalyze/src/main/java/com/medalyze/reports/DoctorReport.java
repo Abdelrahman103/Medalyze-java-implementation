@@ -1,4 +1,6 @@
-package com.medalyze;
+package com.medalyze.reports;
+
+import com.medalyze.ReportProduct;
 
 public class DoctorReport implements ReportProduct {
 

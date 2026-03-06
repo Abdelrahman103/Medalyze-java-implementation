@@ -1,14 +1,25 @@
+error id: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java:_empty_/BillingReportCreator#
+file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+empty definition using pc, found symbol in pc: _empty_/BillingReportCreator#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 1653
+uri: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+text:
+```scala
 package com.medalyze;
 
-import com.medalyze.billing.BillingFactory;
-import com.medalyze.billing.InsuranceBillingFactory;
-import com.medalyze.billing.SelfPayBillingFactory;
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import com.medalyze.interfaces.AppointmentProduct;
 import com.medalyze.reports.BillingReportCreator;
 import com.medalyze.reports.MedicalReportCreator;
 import com.medalyze.reports.PrescriptionReportCreator;
 import com.medalyze.reports.ReportCreator;
-import com.medalyze.billing.BillingRecord;
-import com.medalyze.billing.Prescription;
+import com.medalyze.reports.ReportProduct;
 
 /**
  * Main class to test core creational design patterns:
@@ -44,7 +55,7 @@ public class Main {
         creator = new MedicalReportCreator();
         creator.generateReport();
 
-        creator = new BillingReportCreator();
+        creator = new BillingRepor@@tCreator();
         creator.generateReport();
 
         creator = new PrescriptionReportCreator();
@@ -100,3 +111,9 @@ public class Main {
         System.out.println("=== Medalyze System Test Completed Successfully ===");
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/BillingReportCreator#
