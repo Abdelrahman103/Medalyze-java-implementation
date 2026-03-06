@@ -1,3 +1,14 @@
+error id: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java:_empty_/ReportProduct#
+file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+empty definition using pc, found symbol in pc: _empty_/ReportProduct#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 2661
+uri: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+text:
+```scala
 package com.medalyze;
 
 import com.medalyze.factory.report.BillingReportCreator;
@@ -64,7 +75,7 @@ public class Main {
         System.out.println("** Dashboard Abstract Factory Test: Admin Dashboard **");
         DashboardFactory adminFactory = new AdminDashboardFactory();
 
-        ReportProduct adminReport = adminFactory.createReport();
+        ReportProd@@uct adminReport = adminFactory.createReport();
         AppointmentProduct adminAppointment = adminFactory.createAppointment();
 
         adminReport.generateReport();
@@ -107,3 +118,9 @@ public class Main {
         System.out.println("=== Medalyze System Test Completed Successfully ===");
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/ReportProduct#

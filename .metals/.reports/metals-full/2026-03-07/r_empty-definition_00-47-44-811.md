@@ -1,3 +1,14 @@
+error id: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java:_empty_/AdminDashboardFactory#
+file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+empty definition using pc, found symbol in pc: _empty_/AdminDashboardFactory#
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+
+offset: 2527
+uri: file://<HOME>/projects/Medalyze-java-implementation/Deliverable%20%231/medalyze/src/main/java/com/medalyze/Main.java
+text:
+```scala
 package com.medalyze;
 
 import com.medalyze.factory.report.BillingReportCreator;
@@ -14,8 +25,6 @@ import com.medalyze.abstractfactory.dashboard.DashboardFactory;
 import com.medalyze.abstractfactory.dashboard.DoctorDashboardFactory;
 import com.medalyze.billing.BillingRecord;
 import com.medalyze.billing.Prescription;
-import com.medalyze.dashboard.AppointmentProduct;
-import com.medalyze.dashboard.ReportProduct;
 
 /**
  * Main class to test core creational design patterns:
@@ -62,7 +71,7 @@ public class Main {
         // Test Abstract Factory Pattern: Dashboards
         // =========================
         System.out.println("** Dashboard Abstract Factory Test: Admin Dashboard **");
-        DashboardFactory adminFactory = new AdminDashboardFactory();
+        DashboardFactory adminFactory = new Admin@@DashboardFactory();
 
         ReportProduct adminReport = adminFactory.createReport();
         AppointmentProduct adminAppointment = adminFactory.createAppointment();
@@ -107,3 +116,9 @@ public class Main {
         System.out.println("=== Medalyze System Test Completed Successfully ===");
     }
 }
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: _empty_/AdminDashboardFactory#
