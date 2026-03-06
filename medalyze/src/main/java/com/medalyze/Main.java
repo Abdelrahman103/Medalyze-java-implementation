@@ -37,5 +37,38 @@ public class Main {
         DatabaseConnection db2 = DatabaseConnection.getInstance();
 
         System.out.println("Same DB instance? " + (db1 == db2));
+
+        // Dashboard Abstract Factory Test
+        DashboardFactory factory;
+
+        factory = new AdminDashboardFactory();
+
+        ReportProduct report = factory.createReport();
+        AppointmentProduct appointment = factory.createAppointment();
+
+        report.generateReport();
+        appointment.manageAppointment();
+        
+        // Switch Role Easily
+        factory = new DoctorDashboardFactory();
+        
+        // Insurance Billing Factory Test
+        BillingFactory factory;
+
+        // Insurance billing
+        factory = new InsuranceBillingFactory();
+        BillingRecord billing = factory.createBillingRecord();
+        Prescription prescription = factory.createPrescription();
+
+        billing.processBilling();
+        prescription.handlePrescription();
+
+        // Self-pay billing
+        factory = new SelfPayBillingFactory();
+        billing = factory.createBillingRecord();
+        prescription = factory.createPrescription();
+
+        billing.processBilling();
+        prescription.handlePrescription(); 
     }
 }
