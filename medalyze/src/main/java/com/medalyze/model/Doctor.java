@@ -1,20 +1,22 @@
 package com.medalyze.model;
 
+import com.medalyze.flyweight.Specialization;
+
 public class Doctor {
 
     private String doctorID;
-    private String specialty;
+    private Specialization specialization;;
 
-    public Doctor(String doctorID, String specialty) {
+    public Doctor(String doctorID, Specialization specialization) {
         this.doctorID = doctorID;
-        this.specialty = specialty;
+        this.specialization = specialization;
     }
 
     public String getDoctorID() {
         return doctorID;
     }
 
-    public String getSpecialty() {
-        return specialty;
+    public Specialization getSpecialization() {
+        return specialization;
     }
 }
